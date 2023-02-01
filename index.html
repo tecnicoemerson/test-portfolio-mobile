@@ -11,12 +11,12 @@
     <header>
         
         <div id="menu">
-            <h1>Emerson Rodrigues</h1>
+            <h1 id="sobre">Emerson Rodrigues</h1>
            <div>
-            <button>Home</button>
-            <button>Habilidades</button>
-            <button>Projetos</button>
-            <button>Contato</button>
+            <a href="#sobre">Home</a>
+            <a href="#tecnologia">Habilidades</a>
+            <a href="#projeto">Projetos</a>
+            <a href="#contato">Contato</a>
            </div>
         </div>
     
@@ -26,37 +26,47 @@
         <h3>Sobre</h3>
         <p>Meu nome é Emerson Rodrigues, tenho 16 anos, atualmente tenho experiência em Desenvolvimento Web, estou estudando para me tornar um Full Stack.
         Sempre gostei da tecnologia, onde quero cada vez mais me aprofundar nessa area.</p>
+
+        <img src="/fotos/images.jfif" class="perfil-img">
       </div>
     </div>
     </header>
 
     <div id="formaçao">
-    <h3>Habilidades</h3>
+    <h3 id="tecnologia">Tecnologias que utilizo</h3>
 
-    <h4>web-design e front-end</h4>
-    <ul>
-        <li class="list"> <img src="/fotos/css.svg"> CSS</li>
-        <li class="list"> <img src="/fotos/html.svg"> HTML</li>
-        <li class="list"> <img src="/fotos/javascript.svg"> JavaScript</li>
-        <li class="list"> <img src="/fotos/png-transparent-figma-logo-brand-logos-brands-in-colors-icon-thumbnail.png"> Figma</li>
-    </ul>
+    <div class="habilidades">
+        <h4>Front-end</h4>
+        <div>
+            <div class="list" > <img src="/fotos/css.svg"> CSS</div>
+            <div class="list" > <img src="/fotos/html.svg"> HTML</div>
+            <div class="list" > <img src="/fotos/javascript.svg"> JavaScript</div>
+        </div>
+    </div>
 
-    <h4>back-end</h4>
-    <ul>
-        <li class="list"> <img src="/fotos/223-2231845_logo-java-java-icon.png"> Java</li>
-    </ul>
+    <div class="habilidades">
+        <h4>Web-design</h4>
+        <div>
+            <div class="list" > <img src="/fotos/png-transparent-figma-logo-brand-logos-brands-in-colors-icon-thumbnail.png"> Figma</div>
+        </div>
+    </div>
 
-    <h4>bibliotecas</h4>
-    <ul>
-        <li class="list"> <img src="/fotos/bootstrap.png"> Bootstrap</li>
-        <li class="list"> <img src="/fotos/Rlogical-Blog-Images-thumbnail.png"> NextJS</li>
-        <li class="list"> <img src="/fotos/1_7jRD5QhgARucFKvRHFxpOg.png"> Styled Components</li>
-        <li class="list"> <img src="/fotos/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"> react</li>
-        <li class="list"> <img src="/fotos/chakra-ui.png"> ChakraUI</li>
-    </ul>
-
+    <div class="habilidades">
+        <h4>Back-end</h4>
+        <div>
+            <div class="list"> <img src="/fotos/223-2231845_logo-java-java-icon.png"> Java</div>
+        </div>
+    </div>
+    
+    <div class="habilidades">
+        <h4>Bibliotecas</h4>
+        <div>
+            <div class="list"> <img src="/fotos/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"> react</div>
+        </div>
+    </div>
+    
     <section id="slide-top">
-        <h3>Projetos</h3>
+        <h3 id="projeto">Projetos</h3>
     <div class="slide-container">   
         <section class="slide fade">
             <div class="number">1 / 4</div>
@@ -88,13 +98,12 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     </div>
-
     </section>
     
 
     <div id="footer">
         <footer>
-            <h3>Contato</h3>
+            <h3 id="contato">Contato</h3>
             <a href="">
                 <img src="/fotos/png-clipart-social-media-logo-linkedin-computer-icons-social-media-blue-text.png">
             </a>
