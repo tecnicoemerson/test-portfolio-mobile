@@ -7,43 +7,6 @@
     font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     text-decoration: none;
 }
-#menu {
-    width: 100%;
-    height: 115px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333647;
-}
-
-#menu div {
-    margin-right: 35px;
-}
-
-#menu h1 {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
-    padding: 45px;
-}
-
-#menu a{
-    text-decoration: none;
-    color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-#menu a:nth-child(1) {
-    color: #FFC709;
-}
 
 
 #perfil {
@@ -279,7 +242,68 @@ article {
     margin: 0 20px;
 }
 
-@media (max-width: 650px) {
+#h1-sobre {
+    margin: 1%;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #333647;
+    color: white;
+    padding: 12px 20px;
+}
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-right: 35px;
+        margin: -1%;
+}
+.menu li:nth-child(1){
+    color: #FFC709;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media (max-width: 610px) {
     #header {
         width: 100%;
     }
@@ -320,5 +344,49 @@ article {
         padding-bottom: 90px;
     }
 
+    nav {
+        background-color: #333647;
+        color: white;
+    }
+
+    .nav-bar {
+        padding: 20px 0px;
+    }
+
+    .nav-bar h1 {
+        margin: 5%;
+    }
+
+    .open-menu , .close-menu {
+        position: absolute;
+        color: #FFC709;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #333647;
+        color: #FFC709;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;
+    margin-left: 40px;}
+    .menu li a {padding: 10px;
+    color: #FFC709;
+display: flex;
+text-align}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
 }
+
     
