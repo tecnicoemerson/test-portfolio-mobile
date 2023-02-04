@@ -6,6 +6,8 @@
     list-style: none;
     font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
+
 }
 
 
@@ -35,7 +37,7 @@
     margin-top: -9%;
 }
 
-#formaçao {
+#formacao {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +46,7 @@
     color: #FFFFFF;
 }
 
-#formaçao h3 {
+#formacao h3 {
     display: flex;
     justify-content: center;
     font-size: 26px;
@@ -53,11 +55,11 @@
     color: #FFC709;
 }
 
-#formaçao img {
+#formacao img {
     border-radius: 10px 10px 10px 10px;
 }
 
-#formaçao h4 {
+#formacao h4 {
     padding-left: 27.9%;
     font-size: 19px;
 }
@@ -338,7 +340,7 @@ article {
         align-items: center;
     }
 
-    #formaçao {
+    #formacao {
         padding-top: 30px;
         height: 100%;
         padding-bottom: 90px;
@@ -382,9 +384,7 @@ article {
     .menu li {margin-top: 40px;
     margin-left: 40px;}
     .menu li a {padding: 10px;
-    color: #FFC709;
-display: flex;
-text-align}
+    color: #FFC709;}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
