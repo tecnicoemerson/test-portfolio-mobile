@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+
+#perfil {
+    height: 600px;
+    background-image: url(/fotos/fundo-de-arte-abstrata-cores-douradas-e-pretas-pintura-em-aquarela-sobre-tela-com-gradiente-amarelo-suave_113767-5562\ \(1\).webp);
+}
+
+#perfil p {
+    width: 500px;
+    color: white;
+}
+
+#perfil h3 {
+    color: #FFC709;
+}
+
+.perfil-img {
+    width: 17%;
+    border-radius: 50%;
+    margin-left: 60%;
+    margin-top: 7%;
+}
+
+.container {
+    padding-left: 15%;
+    margin-top: -9%;
+}
+
+#formacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1300px;
+    background: #252734;
+    color: #FFFFFF;
+}
+
+#formacao h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    padding-bottom: 35px;
+    line-height: 48px;
+    color: #FFC709;
+}
+
+#formacao img {
+    border-radius: 10px 10px 10px 10px;
+}
+
+#formacao h4 {
+    padding-left: 27.9%;
+    font-size: 19px;
+}
+
+
+.list {
+    margin: 25px -90px 25px 0px;
+    padding: 20px;
+    border: 1px solid #FFC709;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 120px;
+}
+
+.list img {
+    width: 30px;
+}
+
+#slide-top {
+    margin-top: 0%;
+}
+
+.slide-container {
+    max-width: 1000px;
+    position:  relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition:  0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color: white;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0, 0,0.8);
+}
+
+.number {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name:fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+   to {opacity: 1} 
+}
+
+.biblioteca {
+    display: flex;
+    justify-content: center;
+}
+.biblioteca div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    
+   
+}
+.biblioteca div span{
+    color:#a89e9e;
+    font-family: sans-serif;
+    font-size: small;
+}
+.biblioteca div p{
+    color:white;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+}
+.biblioteca li {
+    display: flex;
+    border: 1px solid #FFC709;
+    padding: 10px;
+    margin: 1rem 2rem;
+    width: 250px;
+    font-size: 15px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.biblioteca li img{
+    width: 38px;  
+}
+
+article {
+    background-color: #252734;
+    color: white;
+    height: 70rem;
+}
+
+.backend{
+    display: flex;
+    justify-content: center;
+}
+.backend div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.backend div span{
+    color:#e2d9d9;
+    font-family: sans-serif;
+    font-size: small;
+}
+.backend div p{
+    color:white;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.backend li {
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFC709;
+    padding: 10px;
+    margin: 1rem 2rem;
+    width: 250px;
+    font-size: 15px;
+    height: 50px;
+    justify-content: center;
+}
+.backend li img{
+    width: 38px;  
+}
+.projeto-p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+    height: 160px;
+    background: #333647;
+    display: flex;
+    justify-content: center;
+}
+
+#footer h3 {
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFC709;
+    text-align: center;
+}
+
+#footer img {
+    width: 35px;
+    padding-top: 30px;
+    margin: 0 20px;
+}
+
+#h1-sobre {
+    margin: 1%;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #333647;
+    color: white;
+    padding: 12px 20px;
+}
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-right: 35px;
+        margin: -1%;
+}
+.menu li:nth-child(1){
+    color: #FFC709;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media (max-width: 610px) {
+    #header {
+        width: 100%;
+    }
+
+    #perfil h3 {
+        color: #FFC709;
+        padding-left: 20px;
+    }
+
+    #perfil p {
+        margin: auto;
+        width: 330px;
+        padding: 1px;
+        color: white;
+    }
+
+    .perfil-img {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20%;
+        margin-bottom: 70px;
+    }
+
+    .container {
+        padding-left: 5%;
+    }
+    
+
+    .biblioteca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formacao {
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom: 90px;
+    }
+
+    nav {
+        background-color: #333647;
+        color: white;
+    }
+
+    .nav-bar {
+        padding: 20px 0px;
+    }
+
+    .nav-bar h1 {
+        margin: 5%;
+    }
+
+    .open-menu , .close-menu {
+        position: absolute;
+        color: #FFC709;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #333647;
+        color: #FFC709;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;
+    margin-left: 40px;}
+    .menu li a {padding: 10px;
+    color: #FFC709;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+
+    
