@@ -305,9 +305,14 @@ article {
     right: 20px;
 }
 #check {display: none;}
-@media (max-width: 610px) {
+@media (max-width: 650px) {
     #header {
         width: 100%;
+    }
+
+    #perfil{
+        height: 545px;
+
     }
 
     #perfil h3 {
@@ -320,13 +325,6 @@ article {
         width: 330px;
         padding: 1px;
         color: white;
-    }
-
-    .perfil-img {
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 20%;
-        margin-bottom: 70px;
     }
 
     .container {
@@ -389,4 +387,23 @@ article {
     #check:checked ~ .menu {right: 0;}
 }
 
-    
+@media (max-width: 850px) {
+    .perfil-img {
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 13%;
+        margin-bottom: 75px;
+    }
+    #perfil h3 {
+        color: #FFC709;
+        padding-left: 9%;
+    }
+
+    #perfil p {
+        margin: auto;
+        padding: 5px;
+        color: white;
+        padding-right: 10%;
+    }
+}
+
