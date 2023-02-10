@@ -16,20 +16,8 @@
     background-image: url(/fotos/fundo-de-arte-abstrata-cores-douradas-e-pretas-pintura-em-aquarela-sobre-tela-com-gradiente-amarelo-suave_113767-5562\ \(1\).png);
 }
 
-#perfil p {
-    width: 500px;
-    color: white;
-}
-
-#perfil h3 {
-    color: #FFC709;
-}
-
 .perfil-img {
-    width: 17%;
     border-radius: 50%;
-    margin-left: 60%;
-    margin-top: 7%;
 }
 
 .container {
@@ -245,7 +233,7 @@ article {
 }
 
 #h1-sobre {
-    margin: 1%;
+    margin: 3%;
 }
 
 .nav-bar {
@@ -306,6 +294,12 @@ article {
 }
 #check {display: none;}
 @media (max-width: 650px) {
+
+    .perfil-img {
+        display: flex;
+        margin: auto;
+    }
+
     #header {
         width: 100%;
     }
@@ -319,14 +313,13 @@ article {
         color: #FFC709;
         display: flex;
         justify-content: center;
-        padding-right: 20%;
+        margin-top: 100px;
     }
 
     #perfil p {
-        margin: auto;
-        width: 330px;
-        padding: 1px;
-        color: white;
+        padding: 8%;
+        margin-top: -12px;
+        text-align: center;
     }
 
     .container {
@@ -389,7 +382,7 @@ article {
     #check:checked ~ .menu {right: 0;}
 }
 
-@media (max-width: 884px) {
+/* @media (max-width: 884px) {
     .perfil-img {
         width: 30%;
         margin-left: 36%;
@@ -410,4 +403,4 @@ article {
         padding-right: 10%;
     }
 }
-
+ */
