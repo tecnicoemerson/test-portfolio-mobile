@@ -317,7 +317,9 @@ article {
 
     #perfil h3 {
         color: #FFC709;
-        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        padding-right: 20%;
     }
 
     #perfil p {
@@ -387,16 +389,18 @@ article {
     #check:checked ~ .menu {right: 0;}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 884px) {
     .perfil-img {
         width: 30%;
-        margin-left: 35%;
+        margin-left: 36%;
         margin-top: 13%;
-        margin-bottom: 75px;
+        margin-bottom: 110px;
     }
     #perfil h3 {
         color: #FFC709;
-        padding-left: 9%;
+        display: flex;
+        justify-content: center;
+        padding-right: 17%;
     }
 
     #perfil p {
